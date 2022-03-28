@@ -16,6 +16,7 @@ export default class Clock extends React.Component {
     }
   
     componentWillUnmount() {
+        console.log("unmount");
       clearInterval(this.timerID);
       clearInterval(this.counterID);
     }
