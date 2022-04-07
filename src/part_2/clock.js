@@ -8,6 +8,7 @@ export default class Clock extends React.Component {
 
   componentDidMount() {
     console.log("Component mounted!");
+    console.log("example");
     this.timerID = setInterval(() => this.tick(), 1000);
     this.counterID = setInterval(
       () => this.setState((state, props) => ({ counter: state.counter + 1 })),
